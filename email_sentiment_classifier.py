@@ -28,7 +28,7 @@ for i in tqdm(range(start, df.shape[0]), initial=start):
         df.loc[i,3] = 0.0
     else:
         df.iloc[i, 3] = calculate_sentiment(messageid, body)
-    if i % 10000 == 0 and i != 0:
+    if i % 10000 == 0 and i != 0: # save every ten thousand classifications.
         print('checkpointing at {}'.format(i))
         df.to_csv('bodies_clean_sentiment-checkpoint-{}.csv'.format(i))
 df.to_csv('bodies_clean_sentiment.csv')

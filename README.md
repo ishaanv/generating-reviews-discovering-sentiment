@@ -1,4 +1,4 @@
-# Unsupervised Sentiment Polarity Classification of text
+# Unsupervised Sentiment Polarity Classification of Text
 
 Classify quantitaive sentiment polarity using the trained network from [Learning to Generate Reviews and Discovering Sentiment](https://github.com/openai/generating-reviews-discovering-sentiment) (Alec Radford, Rafal Jozefowicz, Ilya Sutskever).
 
